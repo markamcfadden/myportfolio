@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 
-function ContactPage() {
+function AboutMePage() {
   return (
     <PageContainer>
       <Navbar />
-      <p>This is the contacts page</p>
+      <p>This is the about me page</p>
     </PageContainer>
   );
 }
 
-export default ContactPage;
+export default AboutMePage;
 
 const PageContainer = styled.div`
   display: flex;
