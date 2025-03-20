@@ -19,24 +19,39 @@ const NavbarContainer = styled.nav`
   margin-top: 20px;
   margin-bottom: 20px;
   width: 90%;
-  padding: 20px;
+  max-width: 1500px;
+  padding: 40px;
   background-color: grey;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 const LinkContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 50px;
+
+  @media (max-width: 768px) {
+    gap: 15px;
+  }
 `;
 
 const StyledLink = styled(NavLink)`
   text-decoration: none;
-  font-size: 12px;
+  font-size: 24px;
+  padding: 10px;
 
   &.active {
     font-weight: bold;
-    background-color: orange;
+    background-color: green;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 5px;
   }
 `;
