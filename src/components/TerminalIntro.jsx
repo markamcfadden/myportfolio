@@ -8,12 +8,7 @@ function TerminalIntro() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [
-        `Hello world.\n\n` +
-          `Welome to my portfolio. \n\n` +
-          `I'm Mark, a passionate software developer dedicated to learning, improving my skills and building clean, scalable applications. \n\n` +
-          `Here, you can read more about me, explore my projects and find my contact information. Feel free to look around and reach out.`,
-      ],
+      strings: [`Hello world.\n\n` + `I'm Mark, welcome to my portfolio.`],
       typeSpeed: 45,
       showCursor: false,
       loop: false,
@@ -32,7 +27,8 @@ function TerminalIntro() {
 export default TerminalIntro;
 
 const TerminalBox = styled.div`
-  color: #00ff00;
+  background-color: black;
+  color: green;
   padding: 20px;
   border-radius: 8px;
   width: 80%;
