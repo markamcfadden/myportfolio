@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function ContactCard() {
   return (
-    <ContactContainer>
+    <ContactCardBox>
       <Heading>Let's Connect</Heading>
       <Description>
         Whether you'd like to collaborate, chat about tech, or just say hello —
@@ -23,14 +23,15 @@ function ContactCard() {
           <FaLinkedin /> linkedin.com/markmcfadden
         </ContactItem>
       </ContactInfo>
-    </ContactContainer>
+    </ContactCardBox>
   );
 }
 
 export default ContactCard;
 
-const ContactContainer = styled.div`
+const ContactCardBox = styled.div`
   background-color: #ffffff;
+  border: 1px solid;
   padding: 40px;
   border-radius: 12px;
   max-width: 600px;
