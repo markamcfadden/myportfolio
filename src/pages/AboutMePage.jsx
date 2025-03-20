@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
+import Biography from "../components/Biography";
 
 function AboutMePage() {
   return (
     <PageContainer>
       <Navbar />
-      <p>This is the about me page</p>
+      <Biography />
     </PageContainer>
   );
 }
@@ -17,5 +18,5 @@ const PageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-color: grey;
+  background-color: white;
 `;

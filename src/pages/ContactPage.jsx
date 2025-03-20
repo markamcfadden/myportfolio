@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ContactCard from "../components/ContactCard";
 
 function ContactPage() {
   return (
     <PageContainer>
       <Navbar />
-      <p>This is the contacts page</p>
+      <ContactContainer>
+        <ContactCard />
+      </ContactContainer>
+      <Footer />
     </PageContainer>
   );
 }
@@ -17,5 +22,15 @@ const PageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-color: grey;
+  background-color: white;
+  border: 1px solid red;
+`;
+
+const ContactContainer = styled.div`
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  margin-bottom: 50px;
 `;

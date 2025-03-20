@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function ProjectsPage() {
   return (
     <PageContainer>
       <Navbar />
-      <p>This is the projects page</p>
+      <ProjectsContainer></ProjectsContainer>
+      <Footer />
     </PageContainer>
   );
 }
@@ -17,5 +19,16 @@ const PageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-color: grey;
+  background-color: white;
+`;
+
+const ProjectsContainer = styled.div`
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  width: 100%;
+  max-width: 1500px;
+  border: 3px solid green;
 `;

@@ -29,7 +29,6 @@ const ButtonContainer = styled.div`
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-
   gap: 15px;
   align-items: flex-start;
 `;
