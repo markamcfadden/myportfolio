@@ -1,12 +1,15 @@
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ProjectList from "../components/ProjectList";
 
 function ProjectsPage() {
   return (
     <PageContainer>
       <Navbar />
-      <ProjectsContainer></ProjectsContainer>
+      <ProjectsContainer>
+        <ProjectList />
+      </ProjectsContainer>
       <Footer />
     </PageContainer>
   );
@@ -23,12 +26,7 @@ const PageContainer = styled.div`
 `;
 
 const ProjectsContainer = styled.div`
-  flex-grow: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px;
   width: 100%;
-  max-width: 1500px;
-  border: 3px solid green;
+  max-width: 1600px;
 `;
