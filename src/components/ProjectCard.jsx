@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useState } from "react";
 
 function ProjectCard({
   title,
@@ -9,6 +10,7 @@ function ProjectCard({
   tech_stack,
   image_url,
 }) {
+  const [showTech, setShowTech] = useState(false);
   return (
     <CardContainer>
       <CardImage src={image_url} alt={title} />
@@ -17,37 +19,35 @@ function ProjectCard({
       </CardTitle>
       <CardBody>
         <CardText>{description}</CardText>
-        <MetaContainer>
-          <MetaBox>
-            <Label>Tech Stack:</Label>
-            <Value>
-              {tech_stack.map((tech, index) => (
-                <TechTag key={index}>{tech} </TechTag>
-              ))}
-            </Value>
-          </MetaBox>
-          <MetaBox>
-            <Label>Live Link:</Label>
-            <StyledLink
-              href={live_link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Value>{live_link.replace(/^https?:\/\//, "")}</Value>
-            </StyledLink>
-          </MetaBox>
-          <MetaBox>
-            <Label>Repository:</Label>
-            <StyledLink
-              href={github_repo}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Value>Github/{title}</Value>
-            </StyledLink>
-          </MetaBox>
-        </MetaContainer>
       </CardBody>
+      <ButtonContainer>
+        {tech_stack && tech_stack.length > 0 && (
+          <CardButton onClick={() => setShowTech(true)}>TechStack</CardButton>
+        )}
+        {github_repo && (
+          <CardButton as="a" href={github_repo} target="_blank">
+            GitHub
+          </CardButton>
+        )}{" "}
+        {live_link && (
+          <CardButton as="a" href={live_link} target="_blank">
+            Live Site
+          </CardButton>
+        )}
+      </ButtonContainer>
+      {showTech && (
+        <TechModal onClick={() => setShowTech(false)}>
+          <ModalContent onClick={(e) => e.stopPropagation()}>
+            <h3>🛠 Tech Stack</h3>
+            <ul>
+              {tech_stack.map((tech, index) => (
+                <li key={index}>{tech}</li>
+              ))}
+            </ul>
+            <CloseButton onClick={() => setShowTech(false)}>Close</CloseButton>
+          </ModalContent>
+        </TechModal>
+      )}
     </CardContainer>
   );
 }
@@ -93,34 +93,76 @@ const CardText = styled.p`
   margin-bottom: 5px;
 `;
 
-const MetaContainer = styled.div``;
-
-const MetaBox = styled.div`
+const ButtonContainer = styled.div`
   display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 20px;
+`;
+
+const CardButton = styled.button`
+  background-color: black;
+  color: white;
+  padding: 15px;
+  min-width: 80px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #00ff88;
+    color: black;
+  }
+`;
+
+const TechModal = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.8);
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 5px;
+  z-index: 999;
 `;
 
-const Label = styled.span`
-  font-weight: 600;
-  color: "#3b82f6";
-  margin-right: 3px;
-  min-width: 100px;
+const ModalContent = styled.div`
+  background: #fff;
+  color: #222;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
 `;
 
-const Value = styled.span`
-  color: "#ffffff";
-`;
+const CloseButton = styled.button`
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
 
-const StyledLink = styled.a``;
-
-const TechTag = styled.span`
-  background-color: #7e22ce;
-  color: #ffffff;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 500;
-  margin: 5px 5px 0 0;
-  display: inline-block;
+  &:hover {
+    background-color: #6a0dad;
+  }
 `;
