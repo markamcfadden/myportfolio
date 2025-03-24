@@ -4,15 +4,14 @@ function Biography() {
   return (
     <BioContainer>
       <BioText>
-        {`Before writing code, I was calculating odds and reading opponents at the poker table.
+        {`I found coding later in life, but once I started, it quickly became a genuine passion. After completing an intensive software development bootcamp with Northcoders, I've been fully focused on growing as a developer — drawn to the problem-solving, logic, and constant learning that tech demands.
+I love breaking down complex challenges, writing clean, scalable code, and continuously exploring new technologies to sharpen my skills. Right now, I'm building personal projects and expanding my knowledge through self-study while looking for opportunities to contribute, learn, and grow in a collaborative team.
 
-For over a decade, I worked as a professional poker player — a career that sharpened my analytical thinking, honed my decision-making under pressure, and taught me the value of patience and precision.
+Before transitioning into tech, I spent over a decade as a professional poker player — a career that refined my analytical thinking, decision-making under pressure, and resilience. Later, working as a poker room supervisor, I developed leadership skills and learned how to manage people effectively — experience I'm excited to bring to any team environment.
 
-Over time, what started as a fascination with game theory and probabilities sparked a deeper interest in technology and software.
+Outside of coding, I'm passionate about travel and the outdoors. I've explored over 40 countries across Latin America and Asia, volunteered at a school in Ghana, and speak intermediate Spanish. I love challenging myself in nature, whether it's trekking for days or climbing mountains up to 5,700m.
 
-Now, as a junior software developer, I bring that same strategic mindset to every project — writing clean, scalable code, continuously learning new technologies, and collaborating to create thoughtful digital experiences.
-
-This portfolio is a snapshot of that journey. Explore my projects, learn more about me, or reach out — I’m always excited to connect.`}
+Thanks for stopping by — feel free to check out my projects or reach out if you'd like to connect.`}
       </BioText>
     </BioContainer>
   );
@@ -21,13 +20,13 @@ This portfolio is a snapshot of that journey. Explore my projects, learn more ab
 export default Biography;
 
 const BioContainer = styled.div`
-  background-color: grey;
   padding: 20px;
-  width: 80%;
+  border: 1px solid red;
 `;
 
 const BioText = styled.p`
   white-space: pre-line;
   line-height: 1.6;
   font-size: 16px;
+  max-width: 800px;
 `;
