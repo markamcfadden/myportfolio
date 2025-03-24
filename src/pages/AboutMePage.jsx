@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import TerminalIntro from "../components/TerminalIntro";
 import Biography from "../components/Biography";
 
 function AboutMePage() {
   return (
     <PageContainer>
       <Navbar />
+      <TerminalIntro />
       <AboutMeContainer>
         <Biography />
       </AboutMeContainer>
@@ -33,5 +35,4 @@ const AboutMeContainer = styled.div`
   padding: 25px;
   width: 100%;
   max-width: 1500px;
-  border: 3px solid green;
 `;

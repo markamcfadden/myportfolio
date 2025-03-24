@@ -17,17 +17,34 @@ function ProjectCard({
       </CardTitle>
       <CardBody>
         <CardText>{description}</CardText>
-        <CardText>{tech_stack}</CardText>
         <MetaContainer>
-          <StyledLink
-            href={live_link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <MetaBox>{live_link}</MetaBox>
-          </StyledLink>
           <MetaBox>
-            repository:<StyledLink>{github_repo}</StyledLink>
+            <Label>Tech Stack:</Label>
+            <Value>
+              {tech_stack.map((tech, index) => (
+                <TechTag key={index}>{tech} </TechTag>
+              ))}
+            </Value>
+          </MetaBox>
+          <MetaBox>
+            <Label>Live Link:</Label>
+            <StyledLink
+              href={live_link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Value>{live_link.replace(/^https?:\/\//, "")}</Value>
+            </StyledLink>
+          </MetaBox>
+          <MetaBox>
+            <Label>Repository:</Label>
+            <StyledLink
+              href={github_repo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Value>Github/{title}</Value>
+            </StyledLink>
           </MetaBox>
         </MetaContainer>
       </CardBody>
@@ -71,10 +88,39 @@ const CardStatus = styled.span`
 
 const CardBody = styled.div``;
 
-const CardText = styled.p``;
+const CardText = styled.p`
+  padding: 5px;
+  margin-bottom: 5px;
+`;
 
 const MetaContainer = styled.div``;
 
-const MetaBox = styled.div``;
+const MetaBox = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 5px;
+`;
+
+const Label = styled.span`
+  font-weight: 600;
+  color: "#3b82f6";
+  margin-right: 3px;
+  min-width: 100px;
+`;
+
+const Value = styled.span`
+  color: "#ffffff";
+`;
 
 const StyledLink = styled.a``;
+
+const TechTag = styled.span`
+  background-color: #7e22ce;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px 5px 0 0;
+  display: inline-block;
+`;

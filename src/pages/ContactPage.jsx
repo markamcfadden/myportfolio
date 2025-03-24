@@ -23,7 +23,6 @@ const PageContainer = styled.div`
   align-items: center;
   min-height: 100vh;
   background-color: white;
-  border: 1px solid red;
 `;
 
 const ContactContainer = styled.div`
