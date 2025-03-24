@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
-import dinoslot_img from "../assets/dinosaurs.webp";
-import pokergame_img from "../assets/pokergame.webp";
 import api_img from "../assets/api_mmnews.webp";
 import code4change_img from "../assets/code4change_d.jpg";
 import mmnews_img from "../assets/mmnews_img.webp";
+import gmn_img from "../assets/guess-my-number.png";
 
 function ProjectList() {
   const myProjects = [
@@ -14,7 +13,7 @@ function ProjectList() {
       status: "live",
       description:
         "This API allows users to retrieve and interact with articles, comments, and user data",
-      live_link: "https://mnn-jvu9.onrender.com",
+      live_link: "https://mnn-jvu9.onrender.com/api",
       github_repo: "https://github.com/markamcfadden/be-nc-news-project",
       tech_stack: ["postgresQL", "express.js", "node.js", "jest", "supertest"],
       image_url: api_img,
@@ -43,7 +42,7 @@ function ProjectList() {
       description:
         "A platform hosting open-source projects for social good. Users log in via GitHub OAuth, filter projects by category or skillset, and track contributions. Progress is gamified with XP and leaderboards.",
       live_link: "",
-      github_repo: "",
+      github_repo: "https://github.com/markamcfadden/code4change",
       tech_stack: [
         "next.js",
         "postgresQL",
@@ -58,24 +57,14 @@ function ProjectList() {
     },
     {
       project_id: 4,
-      title: "McPoker",
-      status: "planning",
+      title: "Guess My Number",
+      status: "live",
       description:
-        "An interactive poker game allowing users to play vs friends with a live chat feauture",
-      live_link: "",
-      github_repo: "",
-      tech_stack: [],
-      image_url: pokergame_img,
-    },
-    {
-      project_id: 5,
-      title: "DinosaurSlot",
-      status: "in progress",
-      description: "A dinosaur themed interactive slot machine game",
-      live_link: "",
-      github_repo: "",
-      tech_stack: [],
-      image_url: dinoslot_img,
+        "A retro-style number guessing game where players guess a random number between 1 and 1000. The faster you guess, the higher your score!",
+      live_link: "https://markamcfadden.github.io/guess-my-number/",
+      github_repo: "https://github.com/markamcfadden/guess-my-number",
+      tech_stack: ["HTML", "CSS", "JavaScript"],
+      image_url: gmn_img,
     },
   ];
 
