@@ -240,6 +240,10 @@ const SkillsRow = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Stack the columns on smaller screens */
+  }
 `;
 
 const SkillsColumn = styled.div`
@@ -249,6 +253,10 @@ const SkillsColumn = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  @media (max-width: 768px) {
+    min-width: 100%; /* Take up full width on small screens */
+  }
 `;
 
 const SectionTitle = styled.h3`
