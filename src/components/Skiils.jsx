@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
 import CourseCard from "./CourseCard";
+import Flag from "react-world-flags";
 import {
   SiJavascript,
   SiTypescript,
@@ -89,7 +90,15 @@ function Skills() {
         { name: "Express.js", icon: <SiExpress color="#000000" /> },
       ],
     },
-    { category: "", items: [] },
+    {
+      category: "Soft Skills",
+      items: [
+        {
+          name: "Spanish (B2 level)",
+          icon: <Flag code="es" style={{ width: "2.5rem", height: "2rem" }} />,
+        },
+      ],
+    },
   ];
 
   const courses = [
@@ -98,8 +107,8 @@ function Skills() {
       provider: "Northcoders",
       description:
         "An intensive bootcamp covering JavaScript fundamentals, database design with PostgreSQL, and building RESTful APIs using Express. Developed responsive front-end applications with React and Next.js. Practiced pair programming, agile workflows, and test-driven development throughout.",
-      status: "Completed 21/03/2025",
-      certificateLink: "https://example.com/certificate1",
+      status: "Completed 14/03/2025",
+      certificateLink: "/public/NorthcodersCertificate.pdf",
     },
     {
       name: "Playwright JS/TS Automation Testing from Scratch & Framework",
@@ -195,7 +204,6 @@ function Skills() {
 export default Skills;
 
 const Container = styled.div`
-  padding: 20px;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -204,15 +212,15 @@ const Container = styled.div`
 
 const ToggleButtons = styled.div`
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   gap: 20px;
 `;
 
 const ToggleButton = styled.button`
   background-color: black;
   color: white;
-  padding: 15px;
-  min-width: 80px;
+  padding: 20px;
+  min-width: 140px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
