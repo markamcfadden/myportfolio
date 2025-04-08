@@ -22,7 +22,7 @@ const PageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-color: white;
+  background-color: #f9f7f3;
 `;
 
 const ProjectsContainer = styled.div`
