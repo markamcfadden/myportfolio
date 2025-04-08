@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
+import CourseCard from "./CourseCard";
 import {
   SiJavascript,
   SiTypescript,
@@ -92,9 +93,30 @@ function Skills() {
   ];
 
   const courses = [
-    { name: "Northcoders Bootcamp", status: "Completed" },
-    { name: "Course 2", status: "In Progress" },
-    { name: "Course 3", status: "In Progress" },
+    {
+      name: "Software Development Bootcamp in JavaScript",
+      provider: "Northcoders",
+      description:
+        "An intensive bootcamp covering JavaScript fundamentals, database design with PostgreSQL, and building RESTful APIs using Express. Developed responsive front-end applications with React and Next.js. Practiced pair programming, agile workflows, and test-driven development throughout.",
+      status: "Completed 21/03/2025",
+      certificateLink: "https://example.com/certificate1",
+    },
+    {
+      name: "Playwright JS/TS Automation Testing from Scratch & Framework",
+      provider: "Rahul Shetty, Udemy",
+      description:
+        "An end-to-end automation course using Playwright with JavaScript. Built frameworks with Cucumber BDD and Mocha, integrating UI and API testing, and running tests in CI/CD with Docker. Gained hands-on experience automating real-world web apps and advanced debugging with Playwright tools.",
+      status: "In Progress",
+      certificateLink: null,
+    },
+    {
+      name: "The Complete JavaScript Course 2025: From Zero to Expert!",
+      provider: "Jonas Schmedtmann, Udemy",
+      description:
+        "A complete JavaScript Course, mastering modern JavaScript from basics to advanced concepts. Built projects like a bankist app, mapty, and forkify, applying OOP, asynchronous JavaScript, and real-world problem solving.",
+      status: "In Progress",
+      certificateLink: null,
+    },
   ];
 
   return (
@@ -150,17 +172,20 @@ function Skills() {
           </SkillsRow>
         </SectionContainer>
       )}
-
       {activeSection === "courses" && (
         <SectionContainer>
-          <SectionTitle>Courses</SectionTitle>
-          <CourseList>
+          <CoursesGrid>
             {courses.map((course) => (
-              <CourseItem key={course.name}>
-                <strong>{course.name}</strong> — <em>{course.status}</em>
-              </CourseItem>
+              <CourseCard
+                key={course.name}
+                title={course.name}
+                provider={course.provider}
+                description={course.description}
+                status={course.status}
+                certificateLink={course.certificateLink}
+              />
             ))}
-          </CourseList>
+          </CoursesGrid>
         </SectionContainer>
       )}
     </Container>
@@ -258,12 +283,9 @@ const SkillName = styled.span`
   margin-top: 8px;
 `;
 
-const CourseList = styled.ul`
-  list-style: none;
-  padding: 0;
-`;
-
-const CourseItem = styled.li`
-  margin-bottom: 10px;
-  font-size: 18px;
+const CoursesGrid = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 `;
