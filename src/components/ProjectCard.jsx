@@ -163,6 +163,7 @@ const CloseButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #6a0dad;
+    background-color: #00ff88;
+    color: black;
   }
 `;
