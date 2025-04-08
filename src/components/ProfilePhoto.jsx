@@ -8,10 +8,16 @@ function ProfilePhoto() {
 export default ProfilePhoto;
 
 const Photo = styled.img`
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  border: 4px solid #333;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
 `;
