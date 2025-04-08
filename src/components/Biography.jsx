@@ -4,13 +4,28 @@ function Biography() {
   return (
     <BioContainer>
       <BioText>
-        My path to coding wasn’t traditional, but it’s become a craft I
-        genuinely enjoy refining every day. I’ve spent dedicated time studying
-        web development, and I’m now focused on sharpening my skills through
-        building real-world projects and deepening my understanding of both
-        automated and manual testing. I'm actively looking for opportunities to
-        apply my knowledge in a professional setting and grow as a developer.
-        Let’s connect!
+        <p>
+          Hi, I’m Mark — a motivated junior software developer with a strong
+          interest in automated testing and building reliable web applications.
+        </p>
+        <p>
+          I started out in manual testing, which sparked my curiosity for
+          coding. That led me to learn JavaScript, complete an intensive
+          bootcamp, and build real-world projects to sharpen my skills. Lately,
+          I’ve been diving deeper into automated testing to create more
+          efficient solutions.
+        </p>
+        <p>
+          My background in competitive poker has honed my problem-solving,
+          strategic thinking, and ability to stay calm under pressure —
+          qualities I bring to my development work.
+        </p>
+        <p>
+          I’m focused on continuous learning, growing through hands-on practice,
+          and I’m actively seeking opportunities to develop my skills further in
+          a professional environment.
+        </p>
+        <p>Let’s connect!</p>
       </BioText>
     </BioContainer>
   );
@@ -23,8 +38,13 @@ const BioContainer = styled.div`
 `;
 
 const BioText = styled.p`
+  margin-top: 10px;
   white-space: pre-line;
   line-height: 1.8;
   font-size: 20px;
   max-width: 600px;
+
+  p {
+    margin-bottom: 16px;
+  }
 `;
