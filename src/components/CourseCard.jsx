@@ -49,6 +49,7 @@ const Card = styled.div`
   transition: transform 0.3s ease, box-shadow 0.3s ease,
     background-color 0.3s ease;
   margin-bottom: 20px;
+  min-width: 425px;
   max-width: 900px;
 
   &:hover {
