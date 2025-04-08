@@ -10,7 +10,7 @@ function ContactCard() {
         I'm always open to connecting.
       </Description>
       <ContactInfo>
-        <ContactItem href="mcfadden.a.mark@gmail.com">
+        <ContactItem href="mailto:mcfadden.a.mark@gmail.com">
           <FaEnvelope /> mcfadden.a.mark@gmail.com
         </ContactItem>
         <ContactItem href="https://github.com/markamcfadden" target="_blank">
