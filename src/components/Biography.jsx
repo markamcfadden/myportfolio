@@ -21,7 +21,6 @@ export default Biography;
 
 const BioContainer = styled.div`
   padding: 20px;
-  border: 1px solid red;
 `;
 
 const BioText = styled.p`

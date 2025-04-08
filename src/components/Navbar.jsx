@@ -7,6 +7,7 @@ function Navbar() {
       <LinkContainer>
         <StyledLink to="/">About Me</StyledLink>
         <StyledLink to="/projects">My Projects</StyledLink>
+        <StyledLink to="/skills">Skills</StyledLink>
         <StyledLink to="/contact">Contact Me</StyledLink>
       </LinkContainer>
     </NavbarContainer>

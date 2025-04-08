@@ -11,11 +11,15 @@ function AboutMePage() {
       <Navbar />
       <TerminalIntro />
       <AboutMeContainer>
-        <ProfilePhoto />
-        <Biography />
-        <DownloadLink href="cvlink" download>
-          Download My CV
-        </DownloadLink>
+        <LeftSide>
+          <ProfilePhoto />
+          <DownloadLink href="cvlink" download>
+            Download My CV
+          </DownloadLink>
+        </LeftSide>
+        <RightSide>
+          <Biography />
+        </RightSide>
       </AboutMeContainer>
       <Footer />
     </PageContainer>
@@ -35,12 +39,22 @@ const PageContainer = styled.div`
 const AboutMeContainer = styled.div`
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 25px;
   width: 100%;
   max-width: 1500px;
+`;
+
+const LeftSide = styled.div`
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const RightSide = styled.div`
+  flex-grow: 1;
 `;
 
 const DownloadLink = styled.a`
