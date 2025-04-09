@@ -111,6 +111,14 @@ function Skills() {
       certificateLink: "/public/NorthcodersCertificate.pdf",
     },
     {
+      name: "Software Testing Masterclass (2025) - From Novice to Expert",
+      provider: "Ozan Ilhan, Udemy",
+      description:
+        "A complete Software Testing Masterclass, from fundamentals to advanced techniques. Master manual and automated testing, test automation frameworks, API testing, and real-world test strategies. Build expertise in Selenium, Postman, and test reporting tools, while applying QA best practices to professional-grade projects.",
+      status: "In Progress",
+      certificateLink: null,
+    },
+    {
       name: "Playwright JS/TS Automation Testing from Scratch & Framework",
       provider: "Rahul Shetty, Udemy",
       description:
@@ -141,7 +149,7 @@ function Skills() {
           active={activeSection === "courses"}
           onClick={() => setActiveSection("courses")}
         >
-          Courses
+          Education
         </ToggleButton>
       </ToggleButtons>
 
@@ -281,16 +289,21 @@ const SkillItem = styled.div`
 `;
 
 const IconBox = styled.div`
-  background: #f5f5f5;
-  border-radius: 8px;
-  padding: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 32px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+  }
 `;
 
 const SkillName = styled.span`
