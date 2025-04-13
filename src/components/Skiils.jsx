@@ -24,6 +24,7 @@ import {
   SiTrello,
   SiFigma,
   SiInsomnia,
+  SiPostman,
 } from "react-icons/si";
 
 function Skills() {
@@ -49,6 +50,7 @@ function Skills() {
       items: [
         { name: "Jest", icon: <SiJest color="#c21325" /> },
         { name: "Supertest", icon: <SiTestinglibrary color="#e33332" /> },
+        { name: "Playwright", icon: null },
       ],
     },
     {
@@ -81,6 +83,7 @@ function Skills() {
         { name: "Jira", icon: <SiJirasoftware color="#0052cc" /> },
         { name: "Figma", icon: <SiFigma color="#a259ff" /> },
         { name: "Insomnia", icon: <SiInsomnia color="#4000bf" /> },
+        { name: "Postman", icon: <SiPostman color="#ff6c37" /> },
       ],
     },
     {
@@ -93,6 +96,10 @@ function Skills() {
     {
       category: "Soft Skills",
       items: [
+        {
+          name: "English (Native speaker)",
+          icon: <Flag code="gb" style={{ width: "2.5rem", height: "2rem" }} />,
+        },
         {
           name: "Spanish (B2 level)",
           icon: <Flag code="es" style={{ width: "2.5rem", height: "2rem" }} />,
@@ -115,7 +122,7 @@ function Skills() {
       provider: "Ozan Ilhan, Udemy",
       description:
         "A complete Software Testing Masterclass, from fundamentals to advanced techniques. Master manual and automated testing, test automation frameworks, API testing, and real-world test strategies. Build expertise in Selenium, Postman, and test reporting tools, while applying QA best practices to professional-grade projects.",
-      status: "In Progress",
+      status: "Completed 30/05/2024",
       certificateLink: null,
     },
     {

@@ -12,7 +12,7 @@ function ProjectList() {
       title: "MMNews API",
       status: "live",
       description:
-        "This API allows users to retrieve and interact with articles, comments, and user data",
+        "A RESTful API built with Node.js, Express, and PostgreSQL, enabling users to retrieve and interact with news articles, comments, and user accounts.",
       live_link: "https://mnn-jvu9.onrender.com/api",
       github_repo: "https://github.com/markamcfadden/be-nc-news-project",
       tech_stack: ["postgresQL", "express.js", "node.js", "jest", "supertest"],
@@ -23,7 +23,7 @@ function ProjectList() {
       title: "MMNews",
       status: "live",
       description:
-        "MMNews is a dynamic mobile-first news articles app where users can: Read, filter, and sort articles, log in, post comments, and up vote articles and submit new articles. To sign in please use the username grumpy19.",
+        "A mobile-first news platform built with React, React Router, and Styled Components. Users can browse, filter, and submit articles, post comments, and vote — all powered by the MMNews API.",
       live_link: "https://mmnews.netlify.app/",
       github_repo: "https://github.com/markamcfadden/MMNews",
       tech_stack: [
