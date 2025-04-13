@@ -37,12 +37,13 @@ const BioContainer = styled.div`
   padding: 20px;
 `;
 
-const BioText = styled.p`
+const BioText = styled.div`
   margin-top: 10px;
   white-space: pre-line;
   line-height: 1.8;
   font-size: 20px;
   max-width: 600px;
+  text-align: justify;
 
   p {
     margin-bottom: 16px;
