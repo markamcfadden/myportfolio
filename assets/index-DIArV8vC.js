@@ -591,4 +591,4 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   body {
     font-family: sans-serif; 
   }
-`;Qn.createRoot(document.getElementById("root")).render(R.jsxs(mr,{children:[R.jsx(ud,{}),R.jsx(hd,{})]}));
+`;Qn.createRoot(document.getElementById("root")).render(R.jsxs(mr,{basename:"/myportfolio",children:[R.jsx(ud,{}),R.jsx(hd,{})]}));
