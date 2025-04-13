@@ -115,7 +115,7 @@ function Skills() {
       description:
         "An intensive bootcamp covering JavaScript fundamentals, database design with PostgreSQL, and building RESTful APIs using Express. Developed responsive front-end applications with React and Next.js. Practiced pair programming, agile workflows, and test-driven development throughout.",
       status: "Completed 14/03/2025",
-      certificateLink: "/public/NorthcodersCertificate.pdf",
+      certificateLink: "/src/assets/NorthcodersCertificate.pdf",
     },
     {
       name: "Software Testing Masterclass (2025) - From Novice to Expert",
