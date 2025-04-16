@@ -4,9 +4,21 @@ import api_img from "../assets/api_mmnews.webp";
 import code4change_img from "../assets/code4change_d.jpg";
 import mmnews_img from "../assets/mmnews_img.webp";
 import gmn_img from "../assets/guess-my-number.png";
+import tt_img from "../assets/tartan_tactics.png";
 
 function ProjectList() {
   const myProjects = [
+    {
+      project_id: 5,
+      title: "Tartan Tactics",
+      status: "in progress",
+      description:
+        "A full-stack Scottish Premiership Fantasy Football Game. Users create custom teams and manage transfers to score points based of events in the real world games. Features include competing in custom leagues vs friends.",
+      live_link: "",
+      github_repo: "",
+      tech_stack: ["postgresQL", "express.js", "node.js", "jest", "supertest"],
+      image_url: tt_img,
+    },
     {
       project_id: 1,
       title: "MMNews API",
