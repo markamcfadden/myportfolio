@@ -333,7 +333,7 @@ Please change the parent <Route path="${U}"> to <Route path="${U==="/"?"*":`${U}
   p {
     margin-bottom: 16px;
   }
-`,Cf="/myportfolio/assets/mark-J9lbV5XZ.png";function Ef(){return A.jsx(Tf,{src:Cf,alt:"A photo of me"})}const Tf=Y.img`
+`,Cf="/myportfolio/assets/mark-mUydV5JE.jpg";function Ef(){return A.jsx(Tf,{src:Cf,alt:"A photo of me"})}const Tf=Y.img`
   width: 300px;
   height: 300px;
   object-fit: cover;

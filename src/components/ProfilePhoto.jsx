@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import myPhoto from "../assets/mark.png";
+import myPhoto from "../assets/mark.jpg";
 
 function ProfilePhoto() {
   return <Photo src={myPhoto} alt="A photo of me" />;
