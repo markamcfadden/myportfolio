@@ -11,23 +11,23 @@ function ProjectList() {
     {
       project_id: 5,
       title: "Tartan Tactics",
-      status: "in progress",
+      status: "coming soon",
       description:
         "A full-stack Scottish Premiership Fantasy Football Game. Users create custom teams and manage transfers to score points based of events in the real world games. Features include competing in custom leagues vs friends.",
       live_link: "",
       github_repo: "",
-      tech_stack: ["postgresQL", "express.js", "node.js", "jest", "supertest"],
+      tech_stack: [],
       image_url: tt_img,
     },
     {
-      project_id: 1,
-      title: "MMNews API",
-      status: "live",
+      project_id: 6,
+      title: "Tartan Tactics Backend",
+      status: "in progress",
       description:
-        "A RESTful API built with Node.js, Express, and PostgreSQL, enabling users to retrieve and interact with news articles, comments, and user accounts.",
-      live_link: "https://mnn-jvu9.onrender.com/api",
-      github_repo: "https://github.com/markamcfadden/be-nc-news-project",
-      tech_stack: ["postgresQL", "express.js", "node.js", "jest", "supertest"],
+        "The backend for a full-stack Scottish Premiership Fantasy Football Game. This API handles user authentication, team management, player selection, scoring, and other key game features. Built with Node.js, Express, and PostgreSQL.",
+      live_link: "",
+      github_repo: "https://github.com/markamcfadden/tartan_tactics_be",
+      tech_stack: ["PostgreSQL", "Express.js", "Node.js", "Jest", "Supertest"],
       image_url: api_img,
     },
     {
@@ -46,6 +46,17 @@ function ProjectList() {
         "styled components",
       ],
       image_url: mmnews_img,
+    },
+    {
+      project_id: 1,
+      title: "MMNews API",
+      status: "live",
+      description:
+        "A RESTful API built with Node.js, Express, and PostgreSQL, enabling users to retrieve and interact with news articles, comments, and user accounts.",
+      live_link: "https://mnn-jvu9.onrender.com/api",
+      github_repo: "https://github.com/markamcfadden/be-nc-news-project",
+      tech_stack: ["postgresQL", "express.js", "node.js", "jest", "supertest"],
+      image_url: api_img,
     },
     {
       project_id: 3,
