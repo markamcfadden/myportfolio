@@ -13,7 +13,7 @@ function AboutMePage() {
         <LeftSide>
           <ProfilePhoto />
           <SocialButton
-            href="https://docs.google.com/document/d/1U-9SpD5BMssTtB5d49tJRZm8tOrlEsSvrlLRQmAzBpE/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1AHh-2f_3-u4WlvhDRtcPlP81jh-xFKQ7FoxItT863wI/edit?usp=sharing"
             target="_blank"
           >
             View My CV
