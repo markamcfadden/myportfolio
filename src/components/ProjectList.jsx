@@ -9,28 +9,6 @@ import tt_img from "../assets/tartan_tactics.png";
 function ProjectList() {
   const myProjects = [
     {
-      project_id: 5,
-      title: "Tartan Tactics",
-      status: "coming soon",
-      description:
-        "A full-stack Scottish Premiership Fantasy Football Game. Users create custom teams and manage transfers to score points based of events in the real world games. Features include competing in custom leagues vs friends.",
-      live_link: "",
-      github_repo: "",
-      tech_stack: [],
-      image_url: tt_img,
-    },
-    {
-      project_id: 6,
-      title: "Tartan Tactics Backend",
-      status: "in progress",
-      description:
-        "The backend for a full-stack Scottish Premiership Fantasy Football Game. This API handles user authentication, team management, player selection, scoring, and other key game features. Built with Node.js, Express, and PostgreSQL.",
-      live_link: "",
-      github_repo: "https://github.com/markamcfadden/tartan_tactics_be",
-      tech_stack: ["PostgreSQL", "Express.js", "Node.js", "Jest", "Supertest"],
-      image_url: api_img,
-    },
-    {
       project_id: 2,
       title: "MMNews",
       status: "live",
@@ -88,6 +66,28 @@ function ProjectList() {
       github_repo: "https://github.com/markamcfadden/guess-my-number",
       tech_stack: ["HTML", "CSS", "JavaScript"],
       image_url: gmn_img,
+    },
+    {
+      project_id: 5,
+      title: "Tartan Tactics",
+      status: "coming soon",
+      description:
+        "A full-stack Scottish Premiership Fantasy Football Game. Users create custom teams and manage transfers to score points based of events in the real world games. Features include competing in custom leagues vs friends.",
+      live_link: "",
+      github_repo: "",
+      tech_stack: [],
+      image_url: tt_img,
+    },
+    {
+      project_id: 6,
+      title: "Tartan Tactics Backend",
+      status: "in progress",
+      description:
+        "The backend for a full-stack Scottish Premiership Fantasy Football Game. This API handles user authentication, team management, player selection, scoring, and other key game features. Built with Node.js, Express, and PostgreSQL.",
+      live_link: "",
+      github_repo: "https://github.com/markamcfadden/tartan_tactics_be",
+      tech_stack: ["PostgreSQL", "Express.js", "Node.js", "Jest", "Supertest"],
+      image_url: api_img,
     },
   ];
 
