@@ -5,27 +5,27 @@ function Biography() {
     <BioContainer>
       <BioText>
         <p>
-          Hi, I’m Mark — a motivated junior software developer with a strong
-          interest in automated testing and building reliable web applications.
+          Hi, I’m Mark — a junior software developer passionate about creating
+          robust JavaScript applications.
         </p>
         <p>
-          I started out in manual testing, which sparked my curiosity for
-          coding. That led me to learn JavaScript, complete an intensive
-          bootcamp, and build real-world projects to sharpen my skills. Lately,
-          I’ve been diving deeper into automated testing to create more
-          efficient solutions.
+          I began my career in QA testing, which taught me meticulous attention
+          to detail and a drive for reliability. Motivated by that experience, I
+          immersed myself in JavaScript, completed an intensive bootcamp, and
+          built full‑stack projects with Node.js, React, and PostgreSQL.
         </p>
         <p>
-          My background in competitive poker has honed my problem-solving,
-          strategic thinking, and ability to stay calm under pressure —
-          qualities I bring to my development work.
+          My competitive poker background sharpened my analytical thinking,
+          resilience, and composure under pressure—qualities I apply to
+          designing clean, maintainable code and solving complex problems.
         </p>
         <p>
-          I’m focused on continuous learning, growing through hands-on practice,
-          and I’m actively seeking opportunities to develop my skills further in
-          a professional environment.
+          I thrive in team environments—pairing on code reviews, iterating on
+          feedback, and automating workflows to streamline development. A fast
+          learner with a growth mindset, I’m dedicated to expanding my technical
+          toolkit and delivering impactful solutions.
         </p>
-        <p>Let’s connect!</p>
+        <p>Let’s build something great together!</p>
       </BioText>
     </BioContainer>
   );
